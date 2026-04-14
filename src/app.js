@@ -28,7 +28,8 @@ window.onload = function() {
       noun.forEach(no => {
         end.forEach(en => {
 
-          domains.push(`${pr}${ad}${createDomainHack(no,en)}${en}`)
+          let domainHack = createDomainHack(no,en);
+          domains.push(`${pr}${ad}${domainHack}${en}`);
         })
       })
     })
